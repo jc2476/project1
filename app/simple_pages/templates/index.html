@@ -1,41 +1,63 @@
 {% extends "base.html" %}
 {% block content %}
-Index Page
-<div class="row mb-5">
-</div>
-<div class="d-flex flex-column justify-content-around">
-    <div class="row">
-        <div class="col">
-            <div class="card" style="width:200px">
-                <img class="card-img-top" src="/static/images/git.png" alt="Card image" style="width:100%">
-                <div class="card-body text-center">
-                    <a href="/docker" class="btn btn-primary">GitHub</a>
+<img src="/static/images/banner.jpg" class="img-rounded" alt="Project1 Banner">
+<div class="container bcontent">
+    <hr/>
+    <div class="card" style="width: 1250px;">
+        <div class="row no-gutters">
+
+            <div class="col-sm-7">
+                <div class="card-body">
+                    <h5 class="card-title">IS601 Project 1</h5>
+                    <p class="card-text">This website for NJIT's IS601 represents all the technologies that have been
+                        studied up to this point. These technologies, which include GitHub, Docker, Python/Flask, and
+                        CI/CD, help to automate the development and deployment of websites.</p>
+                    <p>Numerous resources are available on the internet for website content, code, and troubleshooting
+                        assistance. Click the following resources button for a list of sites to assist with coding and
+                        development.</p>
+                    <a href="/resources" class="btn btn-primary">Resources</a>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width:200px">
-                <img class="card-img-top" src="/static/images/docker.png" alt="Card image" style="width:115%">
-                <div class="card-body text-center">
-                    <a href="/pf" class="btn btn-primary">Docker</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width:200px">
-                <img class="card-img-top" src="/static/images/pf.png" alt="Card image" style="width:122%">
-                <div class="card-body text-center">
-                    <a href="/pf" class="btn btn-primary">Python/Flask</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width:200px">
-                <img class="card-img-top" src="/static/images/cicd.png" alt="Card image" style="width:122%">
-                <div class="card-body text-center">
-                    <a href="/cicd" class="btn btn-primary">CI/CD</a>
-                </div>
+            <div class="col-sm-5">
+                <img class="card-img" src="/static/images/computer-science-ms.jpg" alt="Intro Card">
             </div>
         </div>
     </div>
-    {% endblock %}
+</div>
+<div class="row mb-4">
+</div>
+<div class="row">
+    <div class="col" style="width:auto">
+        <div class="card" style="width:auto">
+            <img class="card-img-top" src="/static/images/git.png" alt="Card image" style="width:auto">
+            <div class="card-body text-center">
+                <a href="/docker" class="btn btn-primary">GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width:auto">
+            <img class="card-img-top" src="/static/images/docker.png" alt="Card image" style="width:auto">
+            <div class="card-body text-center">
+                <a href="/pf" class="btn btn-primary">Docker</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width:auto">
+            <img class="card-img-top" src="/static/images/pf.png" alt="Card image" style="width:auto">
+            <div class="card-body text-center">
+                <a href="/pf" class="btn btn-primary">Python/Flask</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" style="width:auto">
+            <img class="card-img-top" src="/static/images/cicd.png" alt="Card image" style="width:auto">
+            <div class="card-body text-center">
+                <a href="/cicd" class="btn btn-primary">CI/CD</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
