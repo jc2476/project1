@@ -1,6 +1,4 @@
-body {
-font-size: 100%;
-}
+
 
 .card-img-top {
     width: 100%;
@@ -13,4 +11,13 @@ font-size: 100%;
     overflow:scroll;
     -webkit-overflow-scrolling: touch;
     width: 600px;
+}
+.anyClass {
+  height:350px;
+  overflow-y: scroll;
+}
+.newsformat {
+
+    margin: 100px;
+    display: block;
 }

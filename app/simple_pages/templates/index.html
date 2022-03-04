@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
-<img src="/static/images/banner.jpg" class="img-rounded" alt="Project1 Banner">
+<img src="/static/images/banner.jpg" class="img-rounded img-fluid" alt="Project1 Banner">
 <div class="container bcontent">
     <hr/>
-    <div class="card" style="width: 1250px;">
+    <div class="card" style="width:1250px">
         <div class="row no-gutters">
-
-            <div class="col-sm-7">
+            <div class="col width:auto">
                 <div class="card-body">
                     <h5 class="card-title">IS601 Project 1</h5>
-                    <p class="card-text">This website for NJIT's IS601 represents all the technologies that have been
+                    <p class="card-text font-size:2vw">This website for NJIT's IS601 represents all the technologies
+                        that have been
                         studied up to this point. These technologies, which include GitHub, Docker, Python/Flask, and
                         CI/CD, help to automate the development and deployment of websites.</p>
                     <p>Numerous resources are available on the internet for website content, code, and troubleshooting
@@ -18,8 +18,8 @@
                     <a href="/resources" class="btn btn-primary">Resources</a>
                 </div>
             </div>
-            <div class="col-sm-5">
-                <img class="card-img" src="/static/images/computer-science-ms.jpg" alt="Intro Card">
+            <div class="col">
+                <img class="img-rounded img-fluid" src="/static/images/computer-science-ms.jpg" alt="Intro Card">
             </div>
         </div>
     </div>
@@ -62,19 +62,17 @@
 </div>
 <hr/>
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <img class="class=" rounded mx-auto d-block" src="/static/images/NJIT-news.jpg" alt="NJIT News">
+    <div class="d-flex justify-content-center">
+        <div class="col-md-4">
+            <img class="img newsformat" src="/static/images/NJIT-news.jpg" alt="NJIT News">
         </div>
-        <div class="col">
-            <div class="panel-body  width:250px">
-                <ul class="list-group">
-                    <div class="powr-rss-feed" id="3ac1b5b6_1646343846"></div>
-                    <script src="https://www.powr.io/powr.js?platform=html"></script>
-                    </li>
-                </ul>
+        <div class="col-md-5 anyClass">
+            <div class="overflow-auto">
+                <div class="powr-rss-feed" id="3ac1b5b6_1646343846"></div>
+                <script src="https://www.powr.io/powr.js?platform=html"></script>
             </div>
         </div>
     </div>
+</div>
 </div>
 {% endblock %}
