@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-       <!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
@@ -10,16 +10,17 @@
     {% block head %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
 
-    <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
+    <title>{% block title %}{% endblock %}IS601 Project 1 Website</title>
     {% endblock %}
 </head>
 <body>
+<div class="container">
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">
             <img src="/static/images/favicon-32x32.png" alt="" width="30" height="24"
                  class="d-inline-block align-text-top">
-            </a>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +41,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/cicd">CI/CD</a>
                 </li>
-                  <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="/resources">Resources</a>
                 </li>
             </ul>
@@ -51,7 +52,7 @@
         </div>
     </div>
 </nav>
-
+    </div>
 <div class="container">
     {% block content %}
     {% endblock %}
@@ -59,12 +60,13 @@
 <footer>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-5 mb-1 text-muted">&copy; {{ year }} Joe Casorio  / Environment: {{ deployment_environment }}</p>
+            <p class="col-md-5 mb-1 text-muted">&copy; {{ year }} Joe Casorio / Environment: {{ deployment_environment
+                }}</p>
 
             <a href="/"
                class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
-                                    <img src="/static/images/favicon-32x32.png"
+                    <img src="/static/images/favicon-32x32.png">
                 </svg>
             </a>
             <ul class="nav col-md-5 justify-content-end">
@@ -81,5 +83,6 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</footer>
 </body>
 </html>
