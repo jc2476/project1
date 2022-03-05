@@ -1,4 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
-    Python/Flask
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h2>Python/Flask</h2>
+            <p>Python is a computer programming language that is has become increasingly popular in recent years. It has
+                helped to create many of the applications that are used in everyday life from data science, to software
+                and web development, and also automation.
+                Flask is a web framework within Python. A web framework is a collection of libraries and modules that
+                enable developers to write applications without the need to deal with low-level details. These
+                applications can range from a simple page to a full commercial website.
+                When using Flask, plugins such as utility libraries or template engines are available to assist in
+                coding. A template engine allows a developer to set a basic layout for pages and set which element to
+                change. This is particularly useful if you want to make a simple change across an entire site such as a
+                menu or footer item. The developer will make the change in one place and it will reflect throughout the
+                entire site.
+                For example:
+                Within this website is a base.html file. This file contains code for the heading and footer of the site.
+                A simple edit to the menu code will reflect across the entire site.
+            </p>
+            <p>In the following screenshots of this website, Fig. 1 shows how set variables are passed into the footer
+                of the base.html code. The {year} tag is defined in one central location and can be passed anywhere
+                within the website.
+            <figcaption>Fig.1</figcaption>
+            <img src="/static/images/pf/pf1.PNG" class="img-rounded img-fluid" alt="PF Example 1">
+            </p>
+            <p>
+            The same goes for actual html pages as shown in Fig. 2. Base.html contains the code for the menu and footer
+            for this website. When index.html is accessed, it pulls data from base.html first, then continues to process
+            the code that is contained on the page.
+
+            <figcaption>Fig.2</figcaption>
+            <img src="/static/images/pf/pf2.PNG" class="img-rounded img-fluid" alt="PF Example 2">
+            </p>
+        </div>
+        <div class="col-2">
+            <br>
+            <img src="/static/images/pf.png" class="img-rounded img-fluid" alt="Python/Flask">
+        </div>
+    </div>
+</div>
+
 {% endblock %}

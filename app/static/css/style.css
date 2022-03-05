@@ -12,12 +12,12 @@
     -webkit-overflow-scrolling: touch;
     width: 600px;
 }
-.anyClass {
+.scrollclass {
   height:350px;
   overflow-y: scroll;
 }
-.newsformat {
 
+.newsformat {
     margin: 100px;
     display: block;
 }
