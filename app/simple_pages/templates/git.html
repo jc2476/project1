@@ -1,4 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
-Git
-{% endblock %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h2> Git and GitHub</h2>
+            <p>GitHub is an online website that assist programmers in developing software and websites by helping to
+                collaborate code and tracking any changes made by all parties involved.
+                Some of the essential aspects of GitHub include repositories, commits, branches, pushes, and pull
+                requests.
+            <ul>
+                <li>Repositories - A repository contains all your files and tracks any changes..</li>
+                <li>Commit - A commit is a revision or change to a file or files. When a commit is made, a unique ID is
+                    created to track who made the change and when.
+                </li>
+                <li>Branch - A branch is a parallel version of a repository. It allows the programmer to make and test
+                    any changes to a website without disrupting the live site. When the programmer is satisfied with
+                    their changes, the branch can be merged into the main branch.
+                </li>
+                <li>Pushes - A push is when you commit any local changes to the remote repository.</li>
+                <li>Pull - When you pull from GitHub, you are importing files from a remote branch into your local
+                    branch. This is especially important when there are other collaborators to ensure your software if
+                    up to date with the latest changes.
+                </li>
+            <br>
+            <p>
+            Git technologies.....</p>
+            </ul>
+            </p>
+        </div>
+        <br>
+          <div class="col-3">
+              <img src="/static/images/git.png" class="img-rounded img-fluid" alt="Git">
+    </div>
+</div>
+            {% endblock %}

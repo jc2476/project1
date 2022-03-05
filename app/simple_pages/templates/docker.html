@@ -1,4 +1,34 @@
 {% extends "base.html" %}
 {% block content %}
-    Docker
-{% endblock %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h2>Docker</h2>
+            <p>Docker is a platform that allows developers to package and run an application in an environment called a
+                container. The docker container environment can be used for testing an application or for deployment of
+                the final product to run either locally or in the cloud.
+                In the past, we applications were run on physical servers. If your site became popular, you may have had
+                to purchase additional servers to balance the load of the incoming traffic. Today, there is no longer a
+                need to purchase any hardware since the inception of “the cloud.” Cloud hosting is comprised of an array
+                of computers that manage and balance resources through software called containers.
+                To better understand Docker, there are several terms that are commonly used and should be understood:
+            <li>DockerFIle – A simple text file that contains instructions on how to build the container image.</li>
+            <li>Docker images – The image contains the source code as well as the tools and libraries that the
+                application needs to run as a container.
+            </li>
+            <li>Containers – The container is a live running instance of an image. Users can interact with containers
+                and administrators can adjust settings and conditions.
+            </li>
+            <li>Docker Hub – Docker Hub is the term used for the public repository of container images.</li>
+            <li>Docker Compose – A command used to manage the application’s architecture. It creates a YAML file, which
+                specifies the services that are in an application.
+            </li>
+        </div>
+        <div class="col-3"><br>
+            <img src="/static/images/docker.png" class="img-rounded img-fluid" alt="Docker">
+        </div>
+        </p>
+    </div>
+</div>
+        {% endblock %}
