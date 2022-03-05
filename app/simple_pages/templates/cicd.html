@@ -1,4 +1,57 @@
 {% extends "base.html" %}
 {% block content %}
- CI/CD
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h2>Continuous Integration and Continuous Development (CI/CD)</h2>
+            <p>Continuous Integration and Continuous Development or CI/CD is, in simple terms, a modern software
+                development practice which incremental code changes are able to be made frequently and reliably.
+                Automated procedures are established to test, build, and deploy code seamlessly and quickly.
+                Continuous integration involves developers making small changes and checks to their code. This process
+                is automated to ensure that teams can effectively collaborate and reliably build, test, and deploy their
+                applications to their intended destinations.
+                Continuous delivery refers to the automated delivery of complete code to testing or development
+                environments. Every change that passes through automated tests is the moved to the production
+                environment.
+                For this project, there are several steps that needed to be taken to establish a CI/CD workflow:
+            <ol type="1">
+                <li>Create a new GitHub repository for your project
+                <li>Create a new Docker repository</li>
+                <li>Create a two new Apps within Heroku, one for production and one for development.</li>
+                <li>Create API key within Heroku</li>
+                <li>Add “secrets” to the GitHub repository including Docker username and Password and Heroku API key.
+                </li>
+                <li>Edit the prod.yml and dev.yml workflow files in the project that contain GitHub Actions with any of
+                    your own account information.
+                </li>
+            </ol>
+            </p><br>
+            <p>Once these steps are completed, the CI/CD process is as follows:
+            <ol type="1">
+                <li>As code is developed locally within PyCharm, commits are made to save and document changes of the
+                    application.
+                </li>
+                <li>Once committed, the application can be pushed to the working branch of GitHub.</li>
+                <li>When a “pull” request is initiated, it will begin the Development workflow process. This starts with
+                    a test of code utilizing Pytest following the instructions contained in simple_pages_test.py. Once
+                    this passes, the workflow will move on to the deployment step where the code is sent to the
+                    development application in Heroku.
+                </li>
+                <li>The code can be reviewed for any errors and a “merge pull request” can be initiated to merge the
+                    branch into the main production branch.
+                </li>
+                <li>The “merge pull request” will then utilize the prod.yml workflow file and follow the GitHub Actions
+                    to again, test the code with Pytest.
+                </li>
+                <li>Once the test passes, the prod.yml workflow instructs GitHub to build the application and send it to
+                    the Docker repository.
+                </li>
+                <li>The final step is to deploy the working and tested product to the production application created
+                    within Heroku.
+                </li>
+            </ol>
+            </p>
+        </div>
+    </div>
+</div>
 {% endblock %}
