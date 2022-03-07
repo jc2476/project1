@@ -38,12 +38,13 @@
                 href="https://hub.docker.com/r/jcasorio/project1-prod">https://hub.docker.com/r/jcasorio/project1-prod</a>.
         </p>
     </div>
-     <h3>Docker Image</h3>
+    <h3>Docker Image</h3>
     <p>An image is a reach only template with instruction to create a docker container. To create an image, you need to
         create a Dockerfile with the instructions that outlines the steps needed to create the image and run it. </p>
     <br>
-       <h3>Docker Container</h3>
-    <p>A container is a runnable instance of an image. A container is isolated from other containers and the host machine. They are small and lightweight environments that share the operating system kernel and resources.</p>
+    <h3>Docker Container</h3>
+    <p>A container is a runnable instance of an image. A container is isolated from other containers and the host
+        machine. They are small and lightweight environments that share the operating system kernel and resources.</p>
     <br>
     <h3>Common Docker commands:</h3>
     <li><b>docker run -itp "port #" "repository name:tag"</b> - This command creates a container from the image</li>
@@ -55,4 +56,19 @@
     <li><b>docker pull "image name"</b> - This will pull an image from the docker repository to the local machine</li>
     <li><b>docker exec -it "container name" [user command]</b> - Runs a command specified by the user in a container
     </li>
-    {% endblock %}
+</div>
+<br>
+<div class="row">
+    <div class="col-8">
+
+        <h3>Starting a container in a terminal</h3>
+        <ol type="1">
+            <li>Open the terminal window and type <b>docker pull jc2476/project1:master</b></li>
+            <li>Type <b>pwd</b> to ensure you are in the proper folder where the applicatin is located</li>
+            <li>Type <b>docker compose up --build</b> to build the docker container</li>
+            <li>Open a browser and go to <b>localhost</b> to view the site</li>
+
+        </ol>
+    </div>
+</div>
+{% endblock %}
