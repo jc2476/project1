@@ -13,15 +13,18 @@
                 need to purchase any hardware since the inception of “the cloud.” Cloud hosting is comprised of an array
                 of computers that manage and balance resources through software called containers.
                 To better understand Docker, there are several terms that are commonly used and should be understood:
-            <li>DockerFIle – A simple text file that contains instructions on how to build the container image.</li>
-            <li>Docker images – The image contains the source code as well as the tools and libraries that the
+            <li><b>DockerFile</b> – A simple text file that contains instructions on how to build the container image.
+            </li>
+            <li><b>Docker images</b> – The image contains the source code as well as the tools and libraries that the
                 application needs to run as a container.
             </li>
-            <li>Containers – The container is a live running instance of an image. Users can interact with containers
+            <li><b>Containers</b> – The container is a live running instance of an image. Users can interact with
+                containers
                 and administrators can adjust settings and conditions.
             </li>
-            <li>Docker Hub – Docker Hub is the term used for the public repository of container images.</li>
-            <li>Docker Compose – A command used to manage the application’s architecture. It creates a YAML file, which
+            <li><b>Docker Hub</b> – Docker Hub is the term used for the public repository of container images.</li>
+            <li><b>Docker Compose</b> – A command used to manage the application’s architecture. It creates a YAML file,
+                which
                 specifies the services that are in an application.
             </li>
         </div>
@@ -30,5 +33,26 @@
         </div>
         </p>
     </div>
-</div>
-        {% endblock %}
+    <Div class="row">
+        <p>The Docker Hub repository for this project can be found at <a
+                href="https://hub.docker.com/r/jcasorio/project1-prod">https://hub.docker.com/r/jcasorio/project1-prod</a>.
+        </p>
+    </div>
+     <h3>Docker Image</h3>
+    <p>An image is a reach only template with instruction to create a docker container. To create an image, you need to
+        create a Dockerfile with the instructions that outlines the steps needed to create the image and run it. </p>
+    <br>
+       <h3>Docker Container</h3>
+    <p>A container is a runnable instance of an image. A container is isolated from other containers and the host machine. They are small and lightweight environments that share the operating system kernel and resources.</p>
+    <br>
+    <h3>Common Docker commands:</h3>
+    <li><b>docker run -itp "port #" "repository name:tag"</b> - This command creates a container from the image</li>
+    <li><b>docker compose up --build"</b> - Create and start all the services in the configuration</li>
+    <li><b>docker stop "container id"</b> - This stops a running container</li>
+    <li><b>docker kill "container id"</b> - This stops a running container immediately</li>
+    <li><b>docker ps</b> - Lists all the running containers</li>
+    <li><b>docker images</b> - Lists all the docker images</li>
+    <li><b>docker pull "image name"</b> - This will pull an image from the docker repository to the local machine</li>
+    <li><b>docker exec -it "container name" [user command]</b> - Runs a command specified by the user in a container
+    </li>
+    {% endblock %}

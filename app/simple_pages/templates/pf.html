@@ -2,7 +2,7 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col-8">
+        <div class="col-9">
             <h2>Python/Flask</h2>
             <p>Python is a computer programming language that is has become increasingly popular in recent years. It has
                 helped to create many of the applications that are used in everyday life from data science, to software
@@ -26,9 +26,11 @@
             <img src="/static/images/pf/pf1.PNG" class="img-rounded img-fluid" alt="PF Example 1">
             </p>
             <p>
-            The same goes for actual html pages as shown in Fig. 2. Base.html contains the code for the menu and footer
-            for this website. When index.html is accessed, it pulls data from base.html first, then continues to process
-            the code that is contained on the page.
+                The same goes for actual html pages as shown in Fig. 2. Base.html contains the code for the menu and
+                footer
+                for this website. When index.html is accessed, it pulls data from base.html first, then continues to
+                process
+                the code that is contained on the page.
 
             <figcaption>Fig.2</figcaption>
             <img src="/static/images/pf/pf2.PNG" class="img-rounded img-fluid" alt="PF Example 2">
@@ -39,12 +41,66 @@
             <img src="/static/images/pf.png" class="img-rounded img-fluid" alt="Python/Flask">
         </div>
     </div>
-        <div class="row">
-        <div class="col-8">
+    <div class="row mb-5">
+        <div class="col-6">
             <h2>Project 1 File Structure</h2>
-            <p> The following image (Fig. 3) represents the file structure used in this project with a description of each item:</p>
-    <figcaption>Fig.3</figcaption>
+            <p> The following image (Fig. 3) represents the file structure used in this project with a description of
+                each item:</p>
+            <figcaption>Fig.3</figcaption>
             <img src="/static/images/project1.png" class="img-rounded img-fluid" alt="Project 1 structure">
+        </div>
+        <div class="col-6">
+            <br><br><br>
+            <p>Other important configuration files that are included in the project list are as follows in Fig.
+                4</p>
+            <figcaption>Fig.4</figcaption>
+            <img src="/static/images/tests.png" class="img-rounded img-fluid" alt="Test files">
+            <li>.coveragerc - Controls coverage.py</li>
+            <li>.dockerignore - Specifies which folders Docker should ignore</li>
+            <li>.gitignore - Specifies which files Git should ignore</li>
+            <li>.pylintrc - Allows you to specify coding standards on a module-by-module basis.</li>
+            <li>docker-compose.yml - A tool for defining and running multi-container Docker applications.</li>
+            <li>Dockerfile - A text document that contains all the commands a user could call on the command line to
+                assemble an image.
+            </li>
+            <li>heroku.yml - Contains Heroku instructions</li>
+            <li>pytest.ini - Pytest configuration file</li>
+            <li>readme.md - Information for users about the application</li>
+            <li>requirements.txt - A list of packages needed to be loaded into the interpreter</li>
+            <li>setup.py - Setup file not used in this application</li>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <br>
+            <p>As shown below in Fig.5, certain tests are put into place to ensure the program works correctly. As
+                shown, these tests include the menu links as well as each page. A value is entered into the test file
+                and when the test is run, Pytest ensures that the value specified is on the page.
+                In this screenshot, each line of code in the first section will check the menu for a link to Home, Git,
+                Docker, Python/Flask, and CI/CD. If one of the links are missing or correctly display, the test will
+                fail.
+            </p>
+            <figcaption>Fig.5</figcaption>
+            <img src="/static/images/testpages.png" class="img-rounded img-fluid" alt="Test pages">
+
+            </p>
+        </div>
+        <div class="col-6">
+            <br>
+            <p> The below screenshot (Fig.6) is an additional example of a test of each page. The test asserts a value
+                and checks to see if the page contains that value.</p></p>
+            <figcaption>Fig.6</figcaption>
+            <img src="/static/images/contextprocesstest.png" class="img-rounded img-fluid"
+                 alt="Context processing test">
+            <br>
+            <p>The screenshow as picture below in Fig.7, show a successful test of all menu items and pages in this
+                project.</p>
+            <figcaption>Fig.7</figcaption>
+            <img src="/static/images/pytest.png" class="img-rounded img-fluid" alt="Pytest">
+            <br>
+        </div>
+    </div>
 </div>
 
-{% endblock %}
+
+    {% endblock %}
