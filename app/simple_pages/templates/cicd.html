@@ -10,8 +10,22 @@
                 Continuous integration involves developers making small changes and checks to their code. This process
                 is automated to ensure that teams can effectively collaborate and reliably build, test, and deploy their
                 applications to their intended destinations.
+                This is especially important when multiple individuals are working on one project. Developers should
+                have a stable base and make small incremental changes. As stated in the article, "Continuous
+                Integration" by Martin Fowler (https://www.martinfowler.com/articles/continuousIntegration.html), "The
+                result of doing this is that there is a stable piece of software that works properly and contains few
+                bugs. Everybody develops off that shared stable base and never gets so far away from that base that it
+                takes very long to integrate back with it."</p>
+            <p>
                 Continuous delivery refers to the automated delivery of complete code to testing or development
-                environments. Every change that passes through automated tests is the moved to the production
+                environments. Fowler states in his Continuous Delivery article
+                (https://www.martinfowler.com/bliki/ContinuousDelivery.html), "You achieve continuous delivery by
+                continuously integrating the software done by the development team, building executables, and running
+                automated tests on those executables to detect problems. Furthermore you push the executables into
+                increasingly production-like environments to ensure the software will work in production."
+
+
+                Every change that passes through automated tests is the moved to the production
                 environment.
                 For this project, there are several steps that needed to be taken to establish a CI/CD workflow:
             <ol type="1">
