@@ -44,3 +44,18 @@
   font-size: 55px;
   color: red;
 }
+#topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+.active {
+     color: white !important;
+    background-color: gray;
+}

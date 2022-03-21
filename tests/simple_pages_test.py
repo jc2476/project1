@@ -11,7 +11,6 @@ def test_request_main_menu_links(client):
     assert b'<a class="nav-link" href="/pf">Python/Flask</a>' in response.data
     assert b'<a class="nav-link" href="/cicd">CI/CD</a>' in response.data
     assert b'<a class="nav-link" href="/resources">Resources</a>' in response.data
-    assert b'<a class="nav-link" href="/calculator">Calculator</a>' in response.data
 
 
 def test_request_index(client):
@@ -58,9 +57,9 @@ def test_request_page4(client):
 
 def test_request_page6(client):
     """This makes the index page"""
-    response = client.get("/calculator")
+    response = client.get("/aaatesting")
     assert response.status_code == 200
-    assert b"Calculator" in response.data
+    assert b"AAA Tutorial" in response.data
 
 def test_request_page5(client):
     """This makes the index page"""

@@ -9,25 +9,34 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     {% block head %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{% endblock %}IS601 Project 1 Website</title>
     {% endblock %}
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') === window.location.href) {
+                    $(this).addClass('active');
+                    $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
-<div class="container">
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-            <img src="/static/images/favicon-32x32.png" alt="" width="30" height="24"
-                 class="d-inline-block align-text-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav me-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/git">Git</a>
@@ -38,24 +47,25 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/pf">Python/Flask</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/cicd">CI/CD</a>
-                </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/calculator">Calculator</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Calculator
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/pylint">Pylint & Others</a></li>
+                        <li><a class="dropdown-item" href="/aaatesting">AAA Testing</a></li>
+                        <li><a class="dropdown-item" href="/oopprinciples">OOP Principles</a></li>
+                        <li><a class="dropdown-item" href="/solid">SOLID</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/resources">Resources</a>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn btn-primary" type="button">Search</button>
-            </form>
         </div>
     </div>
 </nav>
-    </div>
 <div class="container">
     {% block content %}
     {% endblock %}
@@ -65,20 +75,30 @@
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <p class="col-md-5 mb-1 text-muted">&copy; {{ year }} Joe Casorio / Environment: {{ deployment_environment
                 }}</p>
-
             <a href="/"
-               class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+               class="col-md-1 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
                     <img src="/static/images/favicon-32x32.png">
                 </svg>
             </a>
-            <ul class="nav col-md-5 justify-content-end">
-                <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="/git" class="nav-link px-2 text-muted">GitHub</a></li>
+            <ul class="nav col-md-64 justify-content-end">
+                <li class="button"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="button"><a href="/git" class="nav-link px-2 text-muted">GitHub</a></li>
                 <li class="nav-item"><a href="/docker" class="nav-link px-2 text-muted">Docker</a></li>
                 <li class="nav-item"><a href="/pf" class="nav-link px-2 text-muted">Python/Flask</a></li>
                 <li class="nav-item"><a href="/cicd" class="nav-link px-2 text-muted">CI/CD</a></li>
-                <li class="nav-item"><a href="/calculator" class="nav-link px-2 text-muted">Calculator</a></li>
+                <div class="dropup">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color:#6c757d">
+                        Calculator
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" style="color:#6c757d" href="/pylint">Pylint & Others</a></li>
+                        <li><a class="dropdown-item" style="color:#6c757d" href="/aaatesting">AAA Testing</a></li>
+                        <li><a class="dropdown-item" style="color:#6c757d" href="/oopprinciples">OOPs</a></li>
+                        <li><a class="dropdown-item" style="color:#6c757d" href="/solid">SOLID</a></li>
+                    </ul>
+                </div>
                 <li class="nav-item"><a href="/resources" class="nav-link px-2 text-muted">Resources</a></li>
             </ul>
         </footer>

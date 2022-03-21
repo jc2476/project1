@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+
 <div class="container">
     <div class="row">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -40,7 +41,8 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="/static/images/cicdcarousel.jpg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p><a href="/cicd"><h3>CI/CD</h3></a> </p>
+                        <p><a href="/cicd">
+                        <h3>CI/CD</h3></a> </p>
                     </div>
                 </div>
             </div>
@@ -62,27 +64,22 @@
     <hr/>
     <div class="card" style="width:auto">
         <div class="row">
-            <div class="col" style="width:auto">
+            <div class="col-8">
                 <div class="card-body">
-                    <h5 class="card-title" style="font-size:2vw">IS601 Project 1</h5>
-                    <p class="card-text" style="font-size:1.5vw">This website for NJIT's IS601 represents all
-                        the
-                        technologies
-                        that have been
-                        studied up to this point. These technologies, which include GitHub, Docker,
-                        Python/Flask, and
-                        CI/CD, help to automate the development and deployment of websites.</p>
-                    <p class="card-text" style="font-size:1.5vw">Numerous resources are available on the
-                        internet for
-                        website content, code, and troubleshooting
-                        assistance. Click the following resources button for a list of sites to assist with
-                        coding and
-                        development.
+
+                    <p class="card-text" style="font-size:1.25vw">My name is Joe Casorio and I am currently enrolled in
+                        NJIT's Information Systems graduate program. I am looking to make a career change in the next
+                        few years and would like to pick up where I left off in information technology 20 years ago.
+                        This website represents all the technologies that have been studied up to this point. These technologies, which include GitHub, Docker,
+                        Python/Flask, and CI/CD, help to automate the development and deployment of websites.</p>
+                    <p class="card-text" style="font-size:1.25vw">Numerous resources are available on the
+                        internet for website content, code, and troubleshooting assistance. Click the following resources button for a list of sites to assist with
+                        coding and development.
                     </p>
                     <a href="/resources" class="btn btn-primary">Resources</a>
                 </div>
             </div>
-            <div class="col" style="width:auto">
+            <div class="col-4">
                 <img src="/static/images/computer-science-ms.jpg" class="img-fluid" style="width:auto"
                      alt="Intro Card">
             </div>
