@@ -59,3 +59,13 @@
      color: white !important;
     background-color: gray;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
