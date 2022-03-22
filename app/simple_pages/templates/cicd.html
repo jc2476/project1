@@ -2,7 +2,7 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col-8">
+        <div class="col-12">
             <h2>Continuous Integration and Continuous Delivery (CI/CD)</h2>
             <p>Continuous Integration and Continuous Delivery or CI/CD is, in simple terms, a modern software
                 development practice which incremental code changes are able to be made frequently and reliably.
@@ -28,6 +28,11 @@
                 Every change that passes through automated tests is the moved to the production
                 environment.
                 For this project, there are several steps that needed to be taken to establish a CI/CD workflow:
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
             <ol type="1">
                 <li>Create a new GitHub repository for your project
                 <li>Create a new Docker repository</li>
@@ -39,7 +44,7 @@
                     your own account information.
                 </li>
             </ol>
-            </p><br>
+            <br>
             <p>Once these steps are completed, the CI/CD process is as follows:
             <ol type="1">
                 <li>As code is developed locally within PyCharm, commits are made to save and document changes of the
@@ -64,7 +69,15 @@
                     within Heroku.
                 </li>
             </ol>
-            </p>
+        </div>
+        <div class="col-6">
+            <img src="/static/images/heroku.PNG" class="center" style="border: 5px solid #555"; alt="Secrets">
+            <br>
+             <img src="/static/images/commit.PNG" class="center" alt="Commit">
+            <br>
+             <img src="/static/images/pull.PNG" class="center" alt="Pull">
+            <br>
+             <img src="/static/images/deploytests.PNG" class="center" alt="Tests">
         </div>
     </div>
 </div>

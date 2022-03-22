@@ -45,15 +45,14 @@
   color: red;
 }
 #topheader .navbar-nav li > a {
-	text-transform: capitalize;
-	color: #333;
-	transition: background-color .2s, color .2s;
-
+    text-transform: capitalize;
+    color: #333;
+    transition: background-color .2s, color .2s;
 	&:hover,
 	&:focus {
-		background-color: #333;
-		color: #fff;
-	}
+         background-color: #333;
+         color: #fff;
+     }
 }
 .active {
      color: white !important;
@@ -69,3 +68,33 @@
 hr.solid {
   border-top: 3px solid #bbb;
 }
+#zoomA {
+  /* (A) OPTIONAL DIMENSIONS */
+  width: 600px;
+  height: auto;
+
+  /* (B) ANIMATE ZOOM */
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.3s;
+}
+.row1{
+
+    text-align:center;
+    margin:0 auto;
+
+}
+
+/* (C) ZOOM ON HOVER */
+#zoomA:hover { transform: scale(2); }
+
+#zoomB {
+  /* (A) OPTIONAL DIMENSIONS */
+  width: 600px;
+  height: auto;
+
+  /* (B) ANIMATE ZOOM */
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.3s;
+}
+/* (C) ZOOM ON HOVER */
+#zoomB:hover { transform: scale(1.6); }

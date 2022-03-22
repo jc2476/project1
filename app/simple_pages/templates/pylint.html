@@ -1,11 +1,45 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="container">
-    <div class="row">
+    <div class="row center">
+        <br><br>
         <div class="col-12">
-            <h2>Pylint</h2>
+            <img class="w-75 center" src="/static/images/pytestlogo.PNG" alt="Pylint">
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-4">
+            <h4>Pylint</h4>
+            <p>Pylint is a tool that checks for errors in Python code. It attempts to enforce a coding standard and
+                looks for code "smells". Pytest can also look for certain types of errors, make recommendations about
+                how certain code block and be refactored and offer you details about the complexity of the code. </p>
+        <img class="w-50" src="/static/images/command1.PNG" alt="command">
+        </div>
+        <div class="col-8">
+            <br>
+            <img class="w-75 center" src="/static/images/pytest1.png" alt="Pytest" id="zoomB">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <hr>
 
-         </div>
+        <div class="col-5">
+             <br>
+            <img class="w-75 center" src="/static/images/pytest2.png" alt="Pytest" id="zoomB">
+        </div>
+        <div class="col-7">
+            <h4>Pytest Code Coverage</h4>
+            <p>Code coverage is a measure of exhaustiveness of a test suite. 100% code coverage means that a systems is
+                fully tested. The higher the code coverage, the fewer defects a system has. Code coverage canbe broken
+                down into three main types:<br><br>
+                <b>Statement Coverage</b> - This is used by default in the python code coverage library. <br>
+                <b>Branch Coverage</b> - Tests for un-sequential code such as "if" statements. <br>
+                <b>Condition Coverage</b> - This tests for True/False statements </p>
+            <img class="w-25" src="/static/images/command2.PNG" alt="command">
+        </div>
     </div>
 </div>
+
 {% endblock %}

@@ -21,12 +21,12 @@ def test_calculator_result_property():
     calc2 = Calculator()
 
     # Act
-    calc1.result = 3
-    calc2.result = 4
+    calc1.result = 4
+    calc2.result = 2
 
     # Assert
-    assert calc1.result == 3
-    assert calc2.result == 4
+    assert calc1.result == 4
+    assert calc2.result == 2
 
 
 def test_calculator_add_method():
@@ -34,7 +34,18 @@ def test_calculator_add_method():
     calculator = Calculator()
     assert calculator.add(1) == 1
 
+
 def test_calculator_subtract_method():
     """Testing the Calculator Subtract"""
     calculator = Calculator()
-    assert calculator.subtract(1) == -1
+    assert calculator.subtract(-1) == 1
+
+def test_calculator_multiply_method():
+    """Testing the Calculator Subtract"""
+    calculator = Calculator()
+    assert calculator.multiply(-1) == 1
+
+def test_calculator_divide_method():
+    """Testing the Calculator Subtract"""
+    calculator = Calculator()
+    assert calculator.divide(-1) == 1

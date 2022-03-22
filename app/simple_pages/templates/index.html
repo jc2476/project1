@@ -16,50 +16,50 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/static/images/gitcarousel2.jpg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p><a href="/git">
-                        <h3>Git and GitHub</h3></a></p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/static/images/dockercarousel.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <a href="/git">
+                        <img class="d-block w-100" src="/static/images/gitcarousel2.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </a>
 
-                        <p><a href="/docker">
-                        <h3>Docker</h3></a> </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/static/images/pfcarousel.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-
-                        <p><a href="/pf">
-                        <h3>Python/Flask</h3></a> </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="/static/images/cicdcarousel.jpg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <p><a href="/cicd">
-                        <h3>CI/CD</h3></a> </p>
-                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <a href="/docker">
+                    <img class="d-block w-100" src="/static/images/dockercarousel.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="/pf">
+                <img class="d-block w-100" src="/static/images/pfcarousel.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </a>
         </div>
     </div>
+    <div class="carousel-item">
+        <a href="/cicd">
+            <img class="d-block w-100" src="/static/images/cicdcarousel.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </a>
+    </div>
 </div>
-</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+
 <div class="container bcontent">
     <hr/>
     <div class="card" style="width:auto">
@@ -67,13 +67,15 @@
             <div class="col-8">
                 <div class="card-body">
 
-                    <p class="card-text" style="font-size:1.25vw">My name is Joe Casorio and I am currently enrolled in
+                    <p class="card-text" style="font-size:1.25vw">My name is Joe Casorio, and I am currently enrolled in
                         NJIT's Information Systems graduate program. I am looking to make a career change in the next
                         few years and would like to pick up where I left off in information technology 20 years ago.
-                        This website represents all the technologies that have been studied up to this point. These technologies, which include GitHub, Docker,
+                        This website represents all the technologies that have been studied up to this point. These
+                        technologies, which include GitHub, Docker,
                         Python/Flask, and CI/CD, help to automate the development and deployment of websites.</p>
                     <p class="card-text" style="font-size:1.25vw">Numerous resources are available on the
-                        internet for website content, code, and troubleshooting assistance. Click the following resources button for a list of sites to assist with
+                        internet for website content, code, and troubleshooting assistance. Click the following
+                        resources button for a list of sites to assist with
                         coding and development.
                     </p>
                     <a href="/resources" class="btn btn-primary">Resources</a>
@@ -85,8 +87,6 @@
             </div>
         </div>
     </div>
-</div>
-</div>
 </div>
 <div class="row mb-4">
 </div>
@@ -138,6 +138,5 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 {% endblock %}
