@@ -1,7 +1,6 @@
 from os import getenv
 import datetime
 
-
 def utility_text_processors():
     message = "hello world"
 
@@ -15,7 +14,7 @@ def utility_text_processors():
         return year
 
     def format_price(amount, currency="$"):
-        return f"{currency}{amount:.2f}"
+        return "{currency}{amount:.2f}"
 
     return dict(
         mymessage=message,

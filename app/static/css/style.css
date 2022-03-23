@@ -48,12 +48,20 @@
     text-transform: capitalize;
     color: #333;
     transition: background-color .2s, color .2s;
-	&:hover,
-	&:focus {
-         background-color: #333;
-         color: #fff;
-     }
+
+    :hover,
+	:focus {
+        background-color: #333;
+        color: #fff;
+    }
 }
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}
+
+
 .active {
      color: white !important;
     background-color: gray;
@@ -98,3 +106,15 @@ hr.solid {
 }
 /* (C) ZOOM ON HOVER */
 #zoomB:hover { transform: scale(1.6); }
+
+#zoomC {
+  /* (A) OPTIONAL DIMENSIONS */
+  width: 600px;
+  height: auto;
+
+  /* (B) ANIMATE ZOOM */
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.3s;
+}
+/* (C) ZOOM ON HOVER */
+#zoomC:hover { transform: scale(4.0); }

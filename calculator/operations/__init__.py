@@ -1,36 +1,55 @@
-"""These are operation classes"""
+""" These are the Operation Classes"""
 
-@staticmethod
+
 class Addition:
-    """Addition class"""
+    """ This is the addition class"""
 
+    # this defines a static method that you can use without instantiating the calculator class
+    # If you can go to the store and buy it, it is an an object.  If you can't buy it then its a static method
+    @staticmethod
     def add(value_1, value_2):
-        """Add method"""
+        """ This is the add method"""
         return value_1 + value_2
 
+    @classmethod
+    def create(cls, create, values):
+        pass
 
-@staticmethod
+
 class Subtraction:
-    """Subtraction class"""
+    """ This is the subtraction class"""
 
+    @staticmethod
     def subtract(value_1, value_2):
-        """Subtract method"""
+        """ This is the subtract method"""
         return value_1 - value_2
 
+    @classmethod
+    def create(cls, create, values):
+        pass
 
-@staticmethod
+
 class Multiplication:
-    """Multiplication class"""
+    """ This is the multiplication class"""
 
+    @staticmethod
     def multiply(value_1, value_2):
-        """Multiply method"""
+        """ This is the multiply method"""
         return value_1 * value_2
 
+    @classmethod
+    def create(cls, create, values):
+        pass
 
-@staticmethod
+
 class Division:
-    """Division class"""
+    """ This is the division class"""
 
+    @staticmethod
     def divide(value_1, value_2):
-        """Divide method"""
+        """ This is the divide method"""
         return value_1 / value_2
+
+    @classmethod
+    def create(cls, create, values):
+        pass
