@@ -3,7 +3,7 @@ name: Development Workflow
 on:
   pull_request:
     branches:
-      - 'calculator'
+      - 'master'
 
 jobs:
   run_pytest:
