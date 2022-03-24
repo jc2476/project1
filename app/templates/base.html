@@ -10,10 +10,12 @@
     {% block head %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}{% endblock %}IS601 Project 1 Website</title>
-    {% endblock %}
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <title>{% block title %}{% endblock %}IS601 Project 2 Website</title>
+    {% endblock %}
     <script>
         $(function () {
             $('a').each(function () {
@@ -32,7 +34,6 @@
             <img src="/static/images/favicon-32x32.png" alt="" width="30" height="24"
                  class="d-inline-block align-text-top">
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,7 +52,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/pf">Python/Flask</a>
                 </li>
-                         <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="/cicd">CI/CD</a>
                 </li>
                 <li class="nav-item dropdown">
@@ -102,7 +103,8 @@
                         <li><a class="dropdown-item" style="color:#6c757d" href="/pylint">Pylint & Others</a></li>
                         <li><a class="dropdown-item" style="color:#6c757d" href="/aaatesting">AAA Testing</a></li>
                         <li><a class="dropdown-item" style="color:#6c757d" href="/oopprinciples">OOPs</a></li>
-                        <li><a class="dropdown-item" style="color:#6c757d" href="/solid">SOLID & Design Patterns</a></li>
+                        <li><a class="dropdown-item" style="color:#6c757d" href="/solid">SOLID & Design Patterns</a>
+                        </li>
                     </ul>
                 </div>
                 <li class="nav-item"><a href="/resources" class="nav-link px-2 text-muted">Resources</a></li>
