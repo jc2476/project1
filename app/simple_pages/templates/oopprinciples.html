@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>OOP Principles</h1>
+            <h2>Glossary</h2>
+            <br>
+            <p>
+            <h3>Terms</h3>
+            <b>Instantiation</b> - The creation of a real instance or particular realization of an abstraction or
+            template such as a class of objects or a computer process.
+            <br>
+            <b>Object</b> - Things you think about first in designing a program and they are also the units of code that
+            are eventually derived from the process. <br>
+            <b>Class</b> - A template definition of the methods and variables in a particular kind of object. <br>
+            <b>Namespace</b> - A declarative region that provides a scope to the identifiers (the names of types,
+            functions, variables, etc) inside it. <br>
+            <b>Constructor</b> - A special method of a class or structure in object-oriented programming that
+            initializes a newly created object of that type. <br>
+            <b>Fixture</b> - Functions which will run before each test function to which it is applied. <br>
+            <b>Type Hint</b> - A formal solution to statically indicate the type of a value within your Python code.
+            <br>
+            <b>Type Cast</b> - Changing an variable of one data type into another. <br>
+            <b>Unit Test</b> - A software testing method by which individual units of source code—sets of one or more
+            computer program modules together with associated control data, usage procedures, and operating
+            procedures—are tested to determine whether they are fit for use. <br>
+            <b>Static</b> - A keyword that can be used to declare a member of a type so that it is specific to that
+            type. <br>
+            <b>Instance Method</b> - Methods which require an object of its class to be created before it can be called.
+            <br>
+            <b>Instance Property</b> - A typical property declared in a class. <br>
+            <b>Static Method</b> - A method defined as a member of an object but is accessible directly from an API
+            object's constructor, rather than from an object instance created via the constructor. <br>
+            <b>Static Property</b> - The properties inside a static method shared by all instances of a class. <br>
+            <br>
+        </div>
+    </div>
+    <hr class="solid">
+    <div class="row">
+        <div class="col-12">
+            <img class="w-75 center" src="/static/images/oop.jpg" alt="OOP">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>Object oriented programming (OOP) is based on the concept of objects. Prior to OOP, you had
+                procedural programming where data was stored in a set of variables. This is a simple and
+                straightforward way of programming and today, it is typically used as a starting point for new
+                programmers. As your programs grow, the number of functions increase and multiple functions will
+                need to be changed as your program changes. OOP can solve this problem by combining groups of
+                related functions and variables in objects. Objects can contain data in the form of properties
+                or attributes as well as actions in the form of functions or methods. </p>
+            <p>There are four major principles of Object Oriented Programming which are Encapsulation,
+                Inheritance, Polymorphism, Abstraction. They are defined as follows:</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4"><br>
+            <b>Abstraction</b>
+            <p>Used to hide background details or any unnecessary implementation about the
+                data so
+                that users only see the required information. Abstraction will only show the necessary
+                details
+                of
+                the
+                object to the user. This will make the interface more simple to work and will also
+                reduce the
+                impact
+                of
+                change.</p>
+        </div>
+        <br><br>
+        <div class="col-4">
+            <img class="w-75 center" src="/static/images/abstraction.png" alt="Abstraction" id="zoomA">
+        </div>
+        <br>
+        <div class="col-4"><br><br>
+            <img class="w-75 center" src="/static/images/abstractioncode.png" alt="AbstractionCode" id="zoomA">
+        </div>
+
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <b>Inheritance</b>
+            <p>The mechanism of basing an object or class upon another object or class,
+                retaining
+                similar implementation. Inheritance allows code to be reused. It is useful when you have an
+                existing
+                class but want to create a new class and reuse code but with additional features. Classes that
+                are
+                derived from an existing class can be called a sublcass, extended class, or child class. The
+                class
+                from
+                which the subclass is derived from is called either a super class, parent class, or base class.
+                Inheritance basically reduces the amount of code you need to write.</p>
+        </div>
+        <div class="col-4"><br><br>
+            <img class="w-75 center" src="/static/images/inheritance.jpg" alt="Inheritance" id="zoomA">
+        </div>
+        <div class="col-4"><br>
+            <img class="w-75 center" src="/static/images/inheritancecode.jpg" alt="Polymorphism" id="zoomA">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-4">
+            <br>
+            <b>Encapsulation</b>
+            <p>The bundling of data with the methods that operate on that data, or the
+                restricting
+                of direct access to some of an object's components. Encapsulation is built on the idea of
+                data
+                hiding. This is accomplished when each object maintains a private state inside a class. This
+                is
+                an
+                important concept when the user should not have access to change certain data. The
+                properties
+                and
+                data are "encapsulated" within the object.</p>
+        </div>
+        <div class="col-4"><br>
+            <img class="w-75 center" src="/static/images/encapsulation.jpeg" alt="Encapsulation" id="zoomA">
+        </div>
+        <div class="col-4">
+            <img class="w-75 center" src="/static/images/aaatest.PNG" alt="Polymorphism" id="zoomA">
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-4"><br>
+            <b>Polymorphism</b>
+            <p>The provision of a single interface to entities of different types, or the use
+                of a
+                single symbol to represent multiple different types. Polymorphism allows you to determine
+                what
+                type
+                of
+                functions to run while the program is running. This will allow the user to use less code by
+                using
+                common
+                properties and the program will behave differently.</p>
+        </div>
+        <div class="col-4"><br><br>
+            <img class="w-75 center" src="/static/images/polymorphism.JPG" alt="Polymorphism" id="zoomA">
+        </div>
+        <div class="col-4">
+            <img class="w-75 center" src="/static/images/polycode.PNG" alt="Polymorphism" id="zoomA">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

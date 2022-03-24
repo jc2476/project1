@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>AAA Tutorial</h2>
+            <p>
+                AAA Tutorial
+
+                The Arrange-Act-Assert (AAA) pattern has become a standard within the programming community. It suggests
+                that you should divide your test method into three sections as the name implies as follows:<br>
+                <b>Arrange</b> - Arrange the section you have code required for a test. Make sure you look at your
+                program and
+                set up the tests for any special steps such as setting up a database or logging into a website. <br>
+                <b>Act</b> - Test the intended method.<br>
+                <b>Assert</b> - See if your desired result was achieved. The assert steps will verify that the program
+                is
+                working correctly.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-7">
+            <p>In the screenshot to the right of the calculator test, each section of AAA testing has been
+                labeled.<br><br>
+                In the first section of this test labeled "Arrange", the variables calc1 and calc2 are created.<br><br>
+                The "Act" section defines the value of calc1 and calc2 as 3 and 4, respectively.<br><br>
+                The "Assert" section verifies that the results of calc1 and calc2 are 3 and 4, respectively.<br>
+                <br>
+
+
+            </p>
+        </div>
+        <div class="col-4">
+            <img src="/static/images/aaatest.PNG" class="img-rounded img-fluid" alt="AAA Test">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-9">
+            The AAA pattern is an effective way of testing our code. The example above shows a simplistic overview of
+            how the AAA testing pattern is applied to this program. The arrange step sets up the data to be tested while
+            the act step performs the test. The final assert step is tasked with determining whether or not the expected
+            result is returned.  <br>  <br>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                https://medium.com/@pjbgf/title-testing-code-ocd-and-the-aaa-pattern-df453975ab80 <br>
+                https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/<br>
+                https://blog.devgenius.io/the-three-as-of-unit-testing-3b8b4bf0d087
+            </div>
+        </div>
+    </div>
+    {% endblock %}
