@@ -5,42 +5,41 @@
         <div class="col-12">
             <br>
             <img class="w-75 center" src="/static/images/solidprin.jpg" alt="SOLID">
-            <br>
+            <br> <br>
             <h3>Overview of SOLID</h3>
             SOLID is an acronym for the first five object-oriented design principles by Robert C. Martin. These
             principles are guidelines used to establish uniformity among programmers. These principles can apply to
             various programming languages and can be shared with collaborators to be with fewer complications.<br><br>
-            <b>S</b> - Single-responsiblity Principle - A class should have one and only one reason to change, meaning
-            that a class should have only one job.<br>
-            <b>O</b> - Open-closed Principle - Objects or entities should be open for extension but closed for
-            modification. A class should be extendable without modifying the class itself.<br>
-            <b>L</b> - Liskov Substitution Principle - Every subclass or derived class should be substitutable for their
-            base or parent class.<br>
-            <b>I</b> - Interface Segregation Principle - A client should never be forced to implement an interface or
-            forced to depend on methods that they do not use.<br>
-            <b>D</b> - Dependency Inversion Principle - Entities must depend on abstractions, not on concretions. The
-            high-level module must not depend on the low-level module, but they should depend on abstractions.<br>
-            <br><br>
+            <br>
         </div>
+
     </div>
     <div class="row justify-content-center">
         <div class="col-5">
-            <h3>Single-Responsiblity Principle </h3>
+            <h3>Single-Responsibility Principle </h3>
             <p><i>"A class should have one and only one reason to change, meaning that a class should have only one
                 job"</i></p>
+            <br>
+            <p>This example clearly shows the Single-Responsibility since each mathematical operation has its own class
+                to perform the correct computation. </p>
         </div>
         <div class="col-3">
-           <img class="w-75 center" src="/static/images/solid-s.PNG" alt="SOLID-S" id="zoomA">
+            <img class="w-75 center" src="/static/images/solid-s.PNG" alt="SOLID-S" id="zoomA">
         </div>
     </div>
     <hr>
     <div class="row justify-content-center">
         <div class="col-5">
             <h3>Open-Closed Principle </h3>
-            <p><i>"Objects or entities should be open for extension but closed for modification. A class should be extendable without modifying the class itself."</i></p>
+            <p><i>"Objects or entities should be open for extension but closed for modification. A class should be
+                extendable without modifying the class itself."</i></p>
+            <br>
+            <p>This Addition Calculation class is an example of the Open-Closed Principle. This objected is closed for
+                modification since the sum of values need to be calculated in an exact way. If this class is modified,
+                it will cause the calculations to be incorrect. </p>
         </div>
-        <div class="col-3">
-           <img class="w-75 center" src="/static/images/solid-o.PNG" alt="SOLID-O" id="zoomA">
+        <div class="col-3"><br><br><br>
+            <img class="w-75 center" src="/static/images/solid-o.PNG" alt="SOLID-O" id="zoomA">
         </div>
     </div>
     <hr>
@@ -48,36 +47,40 @@
         <div class="col-5">
             <h3>Liskov Substitution Principle </h3>
             <p><i>"Every subclass or derived class should be substitutable for their base or parent class."</i></p>
+            <br>
+            <p>This example of code can be considered to represent the Liskov Substitution principle. </p>
         </div>
         <div class="col-3">
-           <img class="w-75 center" src="/static/images/solid-l.PNG" alt="SOLID-L" id="zoomC">
+            <img class="w-75 center" src="/static/images/solid-l.PNG" alt="SOLID-L" id="zoomC">
         </div>
     </div>
     <hr>
     <div class="row justify-content-center">
         <div class="col-5">
             <h3>Interface Segregation Principle </h3>
-            <p><i>"A client should never be forced to implement an interface or forced to depend on methods that they do not use."</i></p>
+            <p><i>"A client should never be forced to implement an interface or forced to depend on methods that they do
+                not use."</i></p>
         </div>
         <div class="col-3">
-           <img class="w-75 center" src="/static/images/solid-s.PNG" alt="SOLID-S" id="zoomA">
+            <img class="w-75 center" src="/static/images/solid-s.PNG" alt="SOLID-S" id="zoomA">
         </div>
     </div>
     <hr>
     <div class="row justify-content-center">
         <div class="col-5">
             <h3>Dependency Inversion Principle</h3>
-            <p><i>"Entities must depend on abstractions, not on concretions. The high-level module must not depend on the low-level module, but they should depend on abstractions."</i></p>
+            <p><i>"Entities must depend on abstractions, not on concretions. The high-level module must not depend on
+                the low-level module, but they should depend on abstractions."</i></p>
         </div>
         <div class="col-3">
-           <img class="w-75 center" src="/static/images/solid-s.PNG" alt="SOLID-S" id="zoomA">
+            <img class="w-75 center" src="/static/images/solid-d.PNG" alt="SOLID-S" id="zoomA">
         </div>
     </div>
     <hr class="solid">
     <div class="row">
         <div class="col-12">
             <h3>Types of Design Patterns</h3>
-            <img class="w-50 center" src="/static/images/dpatterns.jpg" alt="Design Patterns">
+            <img class="w-50 center" src="/static/images/dpatterns.jpg" alt="Design Patterns"><br>
             <p>
                 Design patterns are typical solutions to common problems in software design. They can be thought
                 of
@@ -96,7 +99,7 @@
             <img class="w-50 center" src="/static/images/Creational.jpeg" alt="Creational">
         </div>
         <div class="col-4">
-            <br>
+
             <p> These patterns provide object creation mechanisms that increase flexibility and reuse of
                 existing code. They emphasize the automatic creation of objects within code, rather than
                 requiring
@@ -106,9 +109,15 @@
                 new objects for you so you only need to make modifications to the object creation when necessary
                 and
                 allow
-                the default behaviors to run. </p><br>
+                the default behaviors to run. </p>
         </div>
-
+        <div class="col-4">
+            <p>Creational design patterns are the Factory Method, Abstract Factory, Builder, Singleton, Object Pool,
+                and
+                Prototype. </p> The <b>Factory Method</b> is one of the core design principles to create an object,
+            allowing clients to create objects of a library in such a way that it doesn't have tight coupling with the
+            class hierachy of the library.
+        </div>
     </div>
     <hr>
     <div class="row justify-content-center">
@@ -116,7 +125,7 @@
             <img class="w-50 center" src="/static/images/structural.jpg" alt="Structural">
         </div>
         <div class="col-4">
-            <br>
+
             <p>Structural patters explain how to assemble objects and classes into larger structures,
                 while keeping the structures flexible and efficient. They focus on the composition of classes
                 and by
@@ -127,26 +136,37 @@
                 cases, an interface in object-oriented programming is an abstract type of class without logical
                 code
                 and is
-                used to define method behaviors for other classes that will implement the interface.</p><br>
+                used to define method behaviors for other classes that will implement the interface.</p></div>
+        <div class="col-4">
+            <p>Structural design patterns are Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Private Class
+                Data, and Proxy.</p>
+            <p>The <b>Adapter Pattern</b> converts the interface of a class into another interface or class that the
+                client expects. Adapter lets classes work together that could not otherwise because of incompatibility.
+            </p>
         </div>
     </div>
     <hr>
     <div class="row justify-content-center">
         <div class="col-4">
-            <img class="w-50 center" src="/static/images/behavioral.PNG" alt="Behavoral">
+            <img class="w-50 center" src="/static/images/behavioral.PNG" alt="Behavioral">
         </div>
-        <div class="col-4"><br><br>
+        <div class="col-4">
             <p>Behavioral patterns take care of effective communication and the assignment
                 of responsibilities between objects. The operations that make up a single algorithm might be
                 split
                 up
                 between different classes which make it difficult to manage. Behavioral patterns optimize how
                 communications
-                should be handled between various classes. </p><br>
-        </div>
+                should be handled between various classes. </p>
 
+        </div>
+        <div class="col-4">
+            <p>Behavioral patterns are Chain of responsibility, Command, Interpreter, Iterator, Mediator, Memento, Null
+                Object, Observer, State, Strategy, Template method, Visitor </p>
+            <p>The <b>Template Method</b> lets subclasses redefine certain steps of an algorithm without changing the
+                algorithm structure. You want the behavior of the module to be able to extend, such that we can make the
+                module behave in new and different ways.</p>
+        </div>
     </div>
-</div>
-</div>
 </div>
 {% endblock %}
