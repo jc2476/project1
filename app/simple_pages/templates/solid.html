@@ -6,7 +6,7 @@
             <br>
             <img class="w-75 center" src="/static/images/solidprin.jpg" alt="SOLID">
             <br> <br>
-            <h3>Overview of SOLID</h3>
+            <h2>Overview of SOLID</h2>
             SOLID is an acronym for the first five object-oriented design principles by Robert C. Martin. These
             principles are guidelines used to establish uniformity among programmers. These principles can apply to
             various programming languages and can be shared with collaborators to be with fewer complications.<br><br>
@@ -48,9 +48,12 @@
             <h3>Liskov Substitution Principle </h3>
             <p><i>"Every subclass or derived class should be substitutable for their base or parent class."</i></p>
             <br>
-            <p>This example of code can be considered to represent the Liskov Substitution principle. </p>
+            <p>This example of code can be considered to represent the Liskov Substitution principle. The method
+                "create" falls under the Calculation class and is uesed to create a tuple list for the calculations
+                class to use for its calculations.</p>
         </div>
         <div class="col-3">
+            <br>
             <img class="w-75 center" src="/static/images/solid-l.PNG" alt="SOLID-L" id="zoomC">
         </div>
     </div>
@@ -60,6 +63,10 @@
             <h3>Interface Segregation Principle </h3>
             <p><i>"A client should never be forced to implement an interface or forced to depend on methods that they do
                 not use."</i></p>
+            <br>
+            <p>The code example to the right represents the Interface Segregation Principle. Each method pictured in the
+                example to the right is an integral part of the calculator program. Addition and subtraction are needed
+                to have a complete calculator and no other methods exist that the client would not need. </p>
         </div>
         <div class="col-3">
             <img class="w-75 center" src="/static/images/solid-s.PNG" alt="SOLID-S" id="zoomA">
@@ -71,79 +78,83 @@
             <h3>Dependency Inversion Principle</h3>
             <p><i>"Entities must depend on abstractions, not on concretions. The high-level module must not depend on
                 the low-level module, but they should depend on abstractions."</i></p>
+            <br>
+            <p>The example to the right shows the Dependency Inversion Principle. Each method is separate and do not
+                depend on the low-level module. The "get_last_calculation_object" and the
+                "get_last_calculation_result_value" depend on the class that they fall under. </p>
         </div>
         <div class="col-3">
+            <br><br><br>
             <img class="w-75 center" src="/static/images/solid-d.PNG" alt="SOLID-S" id="zoomA">
         </div>
     </div>
     <hr class="solid">
     <div class="row">
-                    <h2>Types of Design Patterns</h2><br>
-            <img class="w-50 center" src="/static/images/dpatterns.jpg" alt="Design Patterns"><br><br>
-            <p><br>
-                Design patterns are typical solutions to common problems in software design. They can be thought
-                of
-                as
-                pre-made blueprints that can be customized to fit a users code. The pattern is a general concept
-                for
-                solving a particular problem and can't just be copied into your program. Design patterns can be
-                thought
-                of as a toolkit with tried and tested solutions to common problems in software design. Patterns
-                are
-                classified into three main groups:<br><br></p><br><br>
-        </div>
+        <h2>Types of Design Patterns</h2><br>
+        <img class="w-50 center" src="/static/images/dpatterns.jpg" alt="Design Patterns"><br><br>
+        <p><br>
+            Design patterns are typical solutions to common problems in software design. They can be thought
+            of
+            as
+            pre-made blueprints that can be customized to fit a users code. The pattern is a general concept
+            for
+            solving a particular problem and can't just be copied into your program. Design patterns can be
+            thought
+            of as a toolkit with tried and tested solutions to common problems in software design. Patterns
+            are
+            classified into three main groups:<br><br></p><br><br>
     </div>
-
-    <div class="row justify-content-center">
-        <div class="col-4">
-            <img class="center" src="/static/images/Creational.jpeg" alt="Creational">
-        </div>
-        <div class="col-4">
-
-            <p> These patterns provide object creation mechanisms that increase flexibility and reuse of
-                existing code. They emphasize the automatic creation of objects within code, rather than
-                requiring
-                you to
-                instantiate objects manually. Many times, a function or method can call the code necessary to
-                instantiate
-                new objects for you so you only need to make modifications to the object creation when necessary
-                and
-                allow
-                the default behaviors to run. </p>
-        </div>
-        <div class="col-4">
-            <p>Creational design patterns are the Factory Method, Abstract Factory, Builder, Singleton, Object Pool,
-                and
-                Prototype. </p> The <b>Factory Method</b> is one of the core design principles to create an object,
-            allowing clients to create objects of a library in such a way that it doesn't have tight coupling with the
-            class hierachy of the library.<br>
-        </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-4">
+        <img class="center" src="/static/images/Creational.jpeg" alt="Creational">
     </div>
-    <hr>
-    <div class="row justify-content-center">
-        <br>
-        <div class="col-4">
-            <img class="center" src="/static/images/structural.jpg" alt="Structural">
-        </div>
-        <div class="col-4">
+    <div class="col-4">
 
-            <p>Structural patters explain how to assemble objects and classes into larger structures,
-                while keeping the structures flexible and efficient. They focus on the composition of classes
-                and by
-                using
-                inheritance and interfaces, allow objects to be composed in a manner that offers new
-                functionality.
-                In many
-                cases, an interface in object-oriented programming is an abstract type of class without logical
-                code
-                and is
-                used to define method behaviors for other classes that will implement the interface.</p></div>
-        <div class="col-4">
-            <p>Structural design patterns are Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Private Class
-                Data, and Proxy.</p>
-            <p>The <b>Adapter Pattern</b> converts the interface of a class into another interface or class that the
-                client expects. Adapter lets classes work together that could not otherwise because of incompatibility.
-            </p>
+        <p> These patterns provide object creation mechanisms that increase flexibility and reuse of
+            existing code. They emphasize the automatic creation of objects within code, rather than
+            requiring
+            you to
+            instantiate objects manually. Many times, a function or method can call the code necessary to
+            instantiate
+            new objects for you so you only need to make modifications to the object creation when necessary
+            and
+            allow
+            the default behaviors to run. </p>
+    </div>
+    <div class="col-4">
+        <p>Creational design patterns are the Factory Method, Abstract Factory, Builder, Singleton, Object Pool,
+            and
+            Prototype. </p> The <b>Factory Method</b> is one of the core design principles to create an object,
+        allowing clients to create objects of a library in such a way that it doesn't have tight coupling with the
+        class hierachy of the library.<br>
+    </div>
+</div>
+<hr>
+<div class="row justify-content-center">
+    <br>
+    <div class="col-4">
+        <img class="center" src="/static/images/structural.jpg" alt="Structural">
+    </div>
+    <div class="col-4">
+
+        <p>Structural patters explain how to assemble objects and classes into larger structures,
+            while keeping the structures flexible and efficient. They focus on the composition of classes
+            and by
+            using
+            inheritance and interfaces, allow objects to be composed in a manner that offers new
+            functionality.
+            In many
+            cases, an interface in object-oriented programming is an abstract type of class without logical
+            code
+            and is
+            used to define method behaviors for other classes that will implement the interface.</p></div>
+    <div class="col-4">
+        <p>Structural design patterns are Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Private Class
+            Data, and Proxy.</p>
+        <p>The <b>Adapter Pattern</b> converts the interface of a class into another interface or class that the
+            client expects. Adapter lets classes work together that could not otherwise because of incompatibility.
+        </p>
 
     </div>
     <hr>
@@ -169,6 +180,15 @@
                 module behave in new and different ways.</p>
         </div>
     </div>
-        </div>
+</div>
+<hr>
+<div class="row">
+    <h4><b>References</b></h4>
+    <li>
+        <a href="https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design">https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design</a>
+    </li>
+    <li><a href="https://www.youtube.com/watch?v=69sfWNzxTMc">https://www.youtube.com/watch?v=69sfWNzxTMc</a></li>
+    <li><a href="https://www.youtube.com/watch?v=HyQlCMU_Ylw">https://www.youtube.com/watch?v=HyQlCMU_Ylw</a></li>
+    <li><a href="https://refactoring.guru/design-patterns">https://refactoring.guru/design-patterns</a></li>
 </div>
 {% endblock %}
