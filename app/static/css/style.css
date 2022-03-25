@@ -17,44 +17,16 @@
   overflow-y: scroll;
 }
 
-.newsformat {
-    margin: 100px;
-    display: block;
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-}
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-}
 #topheader .navbar-nav li > a {
     text-transform: capitalize;
     color: #333;
-    transition: background-color .2s, color .2s;
-
-    :hover,
-	:focus {
+    transition: background-color .2s, color .2s;}
+{   :hover,
+	:focus
         background-color: #333;
         color: #fff;
     }
-}
 
 #topheader .navbar-nav li.active > a {
 	background-color: #333;
