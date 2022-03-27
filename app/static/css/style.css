@@ -32,12 +32,12 @@
 	background-color: #333;
 	color: #fff;
 }
-
-
 .active {
-     color: white !important;
-    background-color: gray;
+     color: ghostwhite !important;
+    background-color: dimgray;
+    border-radius: 15px;
 }
+
 .center {
   display: block;
   margin-left: auto;
